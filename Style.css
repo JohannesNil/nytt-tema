@@ -1,0 +1,227 @@
+/* 
+Theme name:TestaWordpress;
+Author: Johannes Nilsson;
+Author URI: www.youtube.com;
+Version: 1.0;
+*/
+/* Colors */
+.site-header {
+  border-bottom: 2px solid #000; }
+
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited {
+  display: block;
+  padding: 10px 18px;
+  border: 1px solid #006ec3;
+  text-decoration: none; }
+
+.site-header nav ul li a:hover {
+  background-color: #006ec3;
+  color: #fff; }
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited {
+  background-color: #006ec3;
+  color: #fff; }
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:link,
+.site-header nav ul li.current-page-ancestor a:visited {
+  font-weight: bold;
+  background-color: #006ec3;
+  color: #fff; }
+
+.site-footer nav ul li a:hover {
+  background-color: #006ec3;
+  color: #fff; }
+
+.site-footer nav ul li {
+  border-right: 1px dotted #006ec3; }
+
+.site-footer nav ul li a:link,
+.site-header nav ul li a:visited {
+  display: block;
+  padding: 10px 18px;
+  text-decoration: none; }
+
+.site-footer {
+  margin-top: 140px;
+  border-top: 2px solid #000; }
+
+/*
+General
+*/
+a {
+  text-decoration: none; }
+
+body {
+  font-family: Arial,sans-serif;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none; }
+
+a:link, a:visited {
+  color: #006ec3;
+  text-decoration: none; }
+
+p {
+  line-height: 2em; }
+
+div.container {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.column-container {
+  padding-top: 20px; }
+
+.page-title {
+  cursor: default; }
+
+/*
+article
+*/
+article.post {
+  border-bottom: 2px dotted black;
+  margin-bottom: 10px; }
+
+article.post:last-child {
+  border-bottom: none; }
+
+/*
+Nav
+*/
+.site-nav ul {
+  margin: 0;
+  padding: 0; }
+
+.site-nav ul:before, .site-nav ul:after {
+  content: "";
+  display: table; }
+
+.site-nav ul:after {
+  clear: both; }
+
+.site-nav ul li {
+  list-style: none;
+  float: left; }
+
+/*
+info-box
+*/
+.info-box {
+  width: 30%;
+  float: right;
+  margin: 0 0 20px 20px;
+  padding: 5px;
+  background-color: #EEE; }
+
+/*
+Children-links
+*/
+.children-links {
+  margin-bottom: 20px;
+  font-size: 80%; }
+
+.children-links ul {
+  float: left; }
+
+.children-links li {
+  margin-right: 20px; }
+
+.children-links .parent-link {
+  float: left;
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 2px solid #006ec3;
+  font-size: 120%;
+  font-weight: bold; }
+
+.children-links .parent-link a:link,
+.children-links .parent-link a:visited {
+  color: #000; }
+
+.children-links .current_page_item a:link,
+.children-links .current_page_item a:visited {
+  border-bottom: 2px solid #000;
+  color: #000;
+  cursor: default; }
+
+/*
+Posts
+*/
+.post h2 {
+  margin-bottom: 0; }
+
+p.post-info {
+  font-size: 87%;
+  color: #999; }
+
+p.post-info a:link,
+p.post-info a:visited {
+  color: #999; }
+
+/*
+Search
+*/
+div.hd-search {
+  float: right; }
+
+div.hd-search label {
+  position: absolute;
+  left: -99999px; }
+
+div.hd-search #searchsubmit {
+  background-color: #006ec3;
+  color: #fff;
+  padding: 5px 14px;
+  vertical-align: top; }
+
+button:focus {
+  outline: 0; }
+
+input:focus {
+  outline: 0; }
+
+div.hd-search #s {
+  vertical-align: top;
+  padding: 3px 0; }
+
+/*
+load /delete postsbutton
+*/
+#button-load {
+  background-color: #006ec3;
+  color: #fff;
+  padding: 5px 14px;
+  vertical-align: top;
+  margin-left: 16px; }
+
+/*
+quick add form styles
+*/
+.admin-quick-add {
+  background-color: #DDD;
+  padding: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px; }
+
+.admin-quick-add input,
+.admin-quick-add textarea {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  margin: 0 0 10px 0;
+  box-sizing: border-box; }
+
+#quick-add-button {
+  background-color: #006ec3;
+  color: #fff;
+  padding: 5px 14px; }
+
+#p-delete-link {
+  font-size: 13px;
+  font-style: italic;
+  text-decoration: underline; }
