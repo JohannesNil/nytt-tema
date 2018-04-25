@@ -1,8 +1,9 @@
 <?php
 get_header();
-if (have_posts()) :
-?>
-<h2><?php 
+if (have_posts()) : ?>
+<h2>
+
+	<?php 
 	if (is_category()){
 		singe_cat_title();
 	}elseif (is_tag()){

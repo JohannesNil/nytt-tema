@@ -26,7 +26,7 @@ ourRequest.send();
 });
 }
 
-
+// create html from posbtnresponse 
 function createHTML(postdata){
 var ourHTMLString= '';
 for(i=0; i<postdata.length; i++){
@@ -38,8 +38,6 @@ postDiv.innerHTML = ourHTMLString;
 }
 
 //quick add posts
-
-
 if (postBtn2){
 	postBtn2.addEventListener("click", function(){
 	var ourPostData = {

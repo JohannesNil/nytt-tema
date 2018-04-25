@@ -20,7 +20,7 @@ if(have_posts()) :
 
 		<div class="title-column">
 			<h2 class ="page-title"><?php the_title(); ?></h2>
-			<p class="post-info"><?php the_time('F jS, Y g:i a'); ?> | <?php the_author(); ?></p>
+			<p class="post-info"><?php the_time('F jS, Y G:i a'); ?> | <?php the_author(); ?></p>
 		</div>
 		<div class="text-column">
 			<?php the_content(); ?>

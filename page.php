@@ -17,7 +17,7 @@ if(have_posts()) :
 <article class ="post page">
 	<div class="column-container clearfix">
 		<div class="title-column">
-			<p class="post-info"><?php the_time('F jS, Y g:i a'); ?> | <?php the_author(); ?></p>
+			<p class="post-info"><?php the_time('F jS, Y h:i a'); ?> | <?php the_author(); ?></p>
 		</div>
 		<div class="text-column">
 			<?php the_content(); ?>
