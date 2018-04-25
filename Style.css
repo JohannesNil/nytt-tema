@@ -11,8 +11,8 @@ Version: 1.0;
 .site-header nav ul li a:link,
 .site-header nav ul li a:visited {
   display: block;
-  padding: 10px 18px;
-  border: 1px solid #006ec3;
+  padding: 10px 19px;
+  border: 1.5px solid #006ec3;
   text-decoration: none; }
 
 .site-header nav ul li a:hover {
@@ -46,7 +46,7 @@ Version: 1.0;
   text-decoration: none; }
 
 .site-footer {
-  margin-top: 140px;
+  margin-top: 142px;
   border-top: 2px solid #000; }
 
 /*
@@ -190,7 +190,7 @@ div.hd-search #s {
   padding: 3px 0; }
 
 /*
-load /delete postsbutton
+load/delete postsbutton
 */
 #button-load {
   background-color: #006ec3;
