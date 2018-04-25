@@ -16,6 +16,9 @@ if(have_posts()) :
 <div class="container2"><?php the_excerpt(); ?></div>
 </article>
 
+
+
+
 <?php 
 endwhile;
 	else : 

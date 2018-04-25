@@ -22,21 +22,19 @@ if(have_posts()) :
 
 <article class ="post page">
 	<div class="column-container clearfix">
-
 		<div class="title-column">
-
-			<p class="post-info"><?php the_time('F jS, Y g:i a'); ?> | <?php the_author(); ?></p>
 		</div>
-
-	
 		<div class="text-column">
 			<?php the_content(); ?>
 		</div>
-
 	</div>
 
+<?php 
+if (wp_get_post_parent_id(get_the_ID()) == FALSE){ ?>
+	<h1> farsan är i huset</h1>
 
-?>
+<?php }?>
+
 
 </article>
 
@@ -49,4 +47,4 @@ else : echo '<p>No content found</p>';
 	get_footer();
 
 
-?>
+?>	

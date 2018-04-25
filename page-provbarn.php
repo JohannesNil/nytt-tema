@@ -24,8 +24,6 @@ if(have_posts()) :
 	<div class="column-container clearfix">
 
 		<div class="title-column">
-
-			<p class="post-info"><?php the_time('F jS, Y g:i a'); ?> | <?php the_author(); ?></p>
 		</div>
 
 	
@@ -35,8 +33,17 @@ if(have_posts()) :
 
 	</div>
 
+<?php 
+if (wp_get_post_parent_id(get_the_ID())){ ?>
 
-?>
+<h1><a href="<?php $parentLink = get_permalink($post->post_parent); echo $parentLink;?>"><?php echo get_the_title(get_top_ancestor_id()); ?></a></h1>
+
+<h1>gömt meddelande för barnsidor som ingen annan kan se </h1>
+<p> schhhhhh </p>
+
+
+<?php }?>
+
 
 </article>
 
