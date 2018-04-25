@@ -1,13 +1,8 @@
-
 <?php
-
 get_header();
-
 if (have_posts()) :
 ?>
-
 <h2><?php 
-
 	if (is_category()){
 		singe_cat_title();
 	}elseif (is_tag()){
@@ -27,7 +22,6 @@ if (have_posts()) :
 	}
 	?>
 </h2>
-
 <article class ="post page">
 <nav class=" site-nav children-links clearfix">
 <ul>
@@ -35,31 +29,21 @@ if (have_posts()) :
 	$args = array('child_of' => get_top_ancestor_id(),
 	'title_li' => '' );
 	?>
-
 	<?php wp_list_pages($args); ?>
 </ul>
 </nav>
-	
 	<div class="column-container clearfix">
-
 		<div class="title-column">
 			<h2 class ="page-title"><?php the_title();?></h2>
 		</div>
-
 		<div class="text-column">
 			<?php the_excerpt(); ?>
 		</div>
-
 	</div>
-
-
 </article>
-
-<?php endwhile;
-
-else : echo '<p>No content found</p>'; 
-
+<?php 
+	endwhile;
+	else : echo '<p>No content found</p>'; 
 	endif;
-
 	get_footer();
 ?>

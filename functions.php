@@ -1,6 +1,5 @@
 <?php
 
-
 function wp_delete_post_link($link = 'Delete This', $before = '', $after = '')
 {
 global $post;
@@ -15,8 +14,6 @@ $link = "<a href='" . wp_nonce_url( get_bloginfo('url') . "/wp-admin/post.php?ac
 echo $before . $link . $after;
 }
 
-
-
 function learningWP_resources(){
 wp_enqueue_style('styles', get_stylesheet_uri());
 wp_enqueue_script('scripts', get_template_directory_uri() . '/js/script.js' , NULL, 1.0, true);
@@ -26,11 +23,7 @@ wp_localize_script('scripts', 'magicalData', array(
 	));
 
 }
-
-
-
 add_action('wp_enqueue_scripts' , 'learningWP_resources');
-
 register_nav_menus(array(
 'primary' => __('Primary Menu'),
 'footer' => __('Footer Menu'),
@@ -44,10 +37,4 @@ if($post->post_parent){
 }
 return $post->ID;
 }
-
-
-
-
-
-
 ?>

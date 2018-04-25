@@ -1,8 +1,6 @@
 <?php 
 get_header();
 ?>
-
-
 <?php
 if(have_posts()) : 
 	while (have_posts()) : the_post(); ?>
@@ -15,12 +13,10 @@ if(have_posts()) :
 	<textarea name="content" placeholder="Content"></textarea>
 	<button id="quick-add-button">Create a post</button>
 </div>
-
 <div id="portfolio-posts"></div>
 <button id="button-load">Load posts</button>
 </div>
 </article>
-
 <?php 
 endwhile;
 	else : 

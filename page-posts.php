@@ -1,10 +1,5 @@
 <?php 
-
-
 get_header();
-
-
-
 if(have_posts()) :
 	while(have_posts()) : the_post(); ?>
 
@@ -27,25 +22,12 @@ if(have_posts()) :
 			<h2 class ="page-title"><?php the_title(); ?></h2>
 			<p class="post-info"><?php the_time('F jS, Y g:i a'); ?> | <?php the_author(); ?></p>
 		</div>
-
-	
 		<div class="text-column">
 			<?php the_content(); ?>
-
-
 <button id="button-load">Load  posts</button>
-
-	<div id="portfolio-posts"></div>
-
-	</div>
-
-
 </article>
-
-<?php endwhile;
-
-else : echo '<p>No content found</p>'; 
-
+<?php
+	endwhile;
+	else : echo '<p>No content found</p>'; 
 	endif;
-
 	get_footer();?>

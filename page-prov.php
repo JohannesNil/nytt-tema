@@ -1,10 +1,5 @@
 <?php 
-
-
 get_header();
-
-
-
 if(have_posts()) :
 	while(have_posts()) : the_post(); ?>
 
@@ -15,11 +10,9 @@ if(have_posts()) :
 	$args = array('child_of' => get_top_ancestor_id(),
 	'title_li' => '' );
 	?>
-
 	<?php wp_list_pages($args); ?>
 </ul>
 </nav>
-
 <article class ="post page">
 	<div class="column-container clearfix">
 		<div class="title-column">
@@ -28,23 +21,14 @@ if(have_posts()) :
 			<?php the_content(); ?>
 		</div>
 	</div>
-
 <?php 
 if (wp_get_post_parent_id(get_the_ID()) == FALSE){ ?>
 	<h1> farsan är i huset</h1>
-
 <?php }?>
-
-
 </article>
-
-<?php endwhile;
-
-else : echo '<p>No content found</p>'; 
-
+<?php
+	endwhile;
+	else : echo '<p>No content found</p>'; 
 	endif;
-
 	get_footer();
-
-
 ?>	
